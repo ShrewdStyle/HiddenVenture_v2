@@ -7,6 +7,8 @@ import OurServices from "./components/Pages/OurServices";
 import NotFound from "./components/Pages/NotFound";
 import ContactUs from "./components/Pages/ContactUs";
 import Navbar from "./components/Layout/Navbar/Navbar";
+import Footer from "./components/Layout/Footer/Footer";
+import ServicesForm from "./components/Pages/ServicesForm";
 
 function App() {
   return (
@@ -15,11 +17,13 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/About" component={About} />
-          <Route exact path="/Our-Services" component={OurServices} />
-          <Route exact path="/Contact" component={ContactUs} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/our-services" component={OurServices} />
+          <Route exact path="/our-services/venture" component={ServicesForm} />
+          <Route exact path="/contact" component={ContactUs} />
           <Route component={NotFound} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

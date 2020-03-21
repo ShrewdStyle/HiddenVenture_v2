@@ -7,6 +7,7 @@
   --secondary-color: #190061;
   --third-color: #3500d3;
   --fourth-color: #0c0032;
+  --fifth-color: #711c91;
 }
 
 * {
@@ -17,4 +18,20 @@
 
 body {
   font-family: "Varela Round", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Hind", sans-serif;
+}
+
+/* Utils */
+
+.BottomLine {
+  height: 1px;
+  width: 75%;
+  background-color: #ccc;
+  display: flex;
+  margin: 0 auto;
 }

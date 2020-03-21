@@ -1,0 +1,5 @@
+.Current a:active,
+.Current a.active {
+  border-color: var(--primary-color);
+  color: #333;
+}

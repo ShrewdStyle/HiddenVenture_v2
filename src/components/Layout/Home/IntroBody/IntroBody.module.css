@@ -1,0 +1,42 @@
+.BodyContainer {
+  padding: 3rem;
+  background-color: #f4f4f4;
+}
+
+.BodyHeader {
+  text-align: center;
+  color: var(--primary-color);
+  padding: 1rem 0;
+  font-size: 1.7rem;
+}
+
+.BodyContent {
+  display: flex;
+  padding: 3rem;
+  margin: 0 3rem;
+}
+
+.BodyText {
+  flex: 50%;
+  padding: 2rem;
+}
+.TextHeader {
+  font-size: 3rem;
+}
+.BodyImgContainer {
+  flex: 50%;
+  padding: 2rem;
+  text-align: center;
+}
+.BodyImg {
+  height: 650px;
+  width: 500px;
+}
+.BodyPara {
+  font-size: 18px;
+  line-height: 1.8;
+}
+.BodySubHeader {
+  padding: 1.2rem 0;
+  color: var(--third-color);
+}
