@@ -35,3 +35,20 @@ h3 {
   display: flex;
   margin: 0 auto;
 }
+
+/* SINGLE USE COMPONENTS */
+/* Question.js */
+
+.formQuestions {
+  font-size: 19px;
+  padding: 1.5rem 0;
+}
+
+/* Current.js */
+.currentQuestion {
+  font-size: 14px;
+}
+.currentQuestion span {
+  color: var(--third-color);
+  font-weight: bold;
+}

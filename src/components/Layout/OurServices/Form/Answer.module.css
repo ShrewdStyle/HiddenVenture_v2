@@ -1,0 +1,16 @@
+.AnswerChoice {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+.AnswerChoice:hover {
+  cursor: pointer;
+  background-color: rgba(53, 0, 211, 0.3);
+}
+
+.AnswerChoice input {
+  margin-right: 0.5rem;
+  height: 1.3em;
+  width: 1.3em;
+  outline: none;
+}
