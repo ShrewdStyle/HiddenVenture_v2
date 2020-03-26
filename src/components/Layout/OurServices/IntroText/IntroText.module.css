@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Hind:700&display=swap");
+
+.ServicesWelcomeContainer {
+  padding: 12rem 5rem;
+  display: flex;
+}
+.WelcomeHeader {
+  flex: 30%;
+  font-size: 3.3rem;
+  padding-left: 10rem;
+  font-family: "Hind", sans-serif;
+  color: var(--dark-color);
+}
+.WelcomeHeader span {
+  color: var(--secondary-color);
+}
+.WelcomeText {
+  flex: 50%;
+  font-size: 20px;
+  line-height: 1.8;
+  padding: 0 6rem;
+}
+.VerticalLine {
+  background-color: var(--primary-color);
+  width: 2px;
+}
+
+.IntroTextContainer {
+  padding: 10rem;
+  background-color: #0a0a0a;
+  color: var(--light-color);
+  text-align: center;
+}
+.IntroHeader {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Hind", sans-serif;
+}
+.BottomLineLight {
+  height: 1px;
+  background-color: var(--third-color);
+  width: 300px;
+  margin: 2rem auto 10rem auto;
+}
+.Instruction {
+  padding-bottom: 8rem;
+  font-size: 2.1rem;
+}
+.Instruction:last-child {
+  padding-bottom: 0;
+}
