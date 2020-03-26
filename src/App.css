@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
 
 :root {
@@ -52,3 +53,59 @@ h3 {
   color: var(--third-color);
   font-weight: bold;
 }
+=======
+@import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
+
+:root {
+  --dark-color: #282828;
+  --light-color: #f4f4f4;
+  --primary-color: #240090;
+  --secondary-color: #190061;
+  --third-color: #3500d3;
+  --fourth-color: #0c0032;
+  --fifth-color: #711c91;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Hind", sans-serif;
+}
+
+/* Utils */
+
+.BottomLine {
+  height: 1px;
+  width: 75%;
+  background-color: #ccc;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* SINGLE USE COMPONENTS */
+/* Question.js */
+
+.formQuestions {
+  font-size: 19px;
+  padding: 1.5rem 0;
+}
+
+/* Current.js */
+.currentQuestion {
+  font-size: 14px;
+}
+.currentQuestion span {
+  color: var(--third-color);
+  font-weight: bold;
+}
+>>>>>>> 6bf5347e744296b9209f0489c7500aebc7eff1f9

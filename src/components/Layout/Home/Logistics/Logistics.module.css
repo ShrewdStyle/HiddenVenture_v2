@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .LogisticsContainer {
   padding: 3rem;
   background-color: var(--primary-color);
@@ -39,3 +40,46 @@
   padding: 1.5rem 2rem;
   line-height: 1.6;
 }
+=======
+.LogisticsContainer {
+  padding: 3rem;
+  background-color: var(--primary-color);
+}
+
+.HeaderContainer {
+  text-align: center;
+  color: var(--light-color);
+}
+
+.LogisticsHeader {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.LogisticsSecondaryHeader {
+  color: #ccc;
+}
+
+.LogisticsStepsContainer {
+  padding: 3rem;
+}
+.LogisticsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: var(--light-color);
+}
+.LogisticsStep {
+  text-align: center;
+}
+.StepIcon {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  color: var(--fourth-color);
+}
+.LogisticsStepHeader {
+  font-size: 22px;
+}
+.LogisticsStepText {
+  padding: 1.5rem 2rem;
+  line-height: 1.6;
+}
+>>>>>>> 6bf5347e744296b9209f0489c7500aebc7eff1f9
