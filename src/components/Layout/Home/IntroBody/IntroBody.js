@@ -19,18 +19,19 @@ const IntroBody = () => {
             What makes us different from everyone else?
           </h2>
           <div className={classes.BodyPara}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
-            doloribus ut placeat. Praesentium sapiente, incidunt consequatur hic
-            exercitationem nihil tempore laudantium sint nemo! Repellendus dolor
-            veritatis, dolores optio quidem maiores asperiores tenetur officiis
-            nesciunt. Quos, deserunt! Earum ducimus dolor minus qui, odit ullam
-            beatae ipsum, necessitatibus iusto molestiae asperiores a.
+            There are an incredible amount of holiday destination services which
+            will try and sell you the well known, over priced and over crowded
+            holiday locations, we believe that true travel adventures are made
+            in the most unexpected destinations. It's our goal to give you a
+            truly unique holiday experience by asking you a few basic questions
+            on what you plan to achieve, and then providing you with 3 holiday
+            locations which you otherwise would never have thought to visit.
           </div>
           <h3 className={classes.BodySubHeader}>Who is Hidden Venture for?</h3>
           <div className={classes.BodyPara}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            quae natus consequuntur alias sed eligendi consectetur a rerum
-            minima quos, mollitia ducimus illo nesciunt perferendis!
+            Hidden Venture caters to absolutely everyone, we provide unique
+            destinations for people of all ages, families, friends and people
+            who enjoy to travel on their own.
           </div>
         </div>
         <div

@@ -6,13 +6,19 @@ const Cards = () => {
     <section id={classes.Cards}>
       <div className={classes.CardsContainer}>
         <div className={classes.CardsTextContainer}>
-          <h3 className={classes.CardsHeader}>HiddenVenture by the numbers.</h3>
+          <h3 className={classes.CardsHeader}>
+            Hidden Venture by the numbers.
+          </h3>
           <div className={classes.CardsBody}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            placeat cum commodi atque. Assumenda eos aliquid natus dignissimos
-            non nam.
+            Our passion for data informs everything we do. Every team member at
+            Hidden Venture knows our business inside and out, down to the
+            numbers.
           </div>
           <div className={classes.CardsStat}>1,000,000 +</div>
+          <div className={classes.CardsBody}>
+            Queries across our platform each year with locations all around the
+            world.
+          </div>
           <div className={classes.CardsGrid}>
             <div id={classes.AsiaCard}>
               <div className={classes.CardContentContainer}>

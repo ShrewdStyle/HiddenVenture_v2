@@ -8,8 +8,8 @@ const OurServicesIntro = () => {
         <div className={classes.ShowcaseContent}>
           <div className={classes.Header}>What We Offer</div>
           <div className={classes.HeaderBody}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis, doloribus.
+            We provide truly unique and unforgettable holiday destinations like
+            no other
           </div>
         </div>
       </div>

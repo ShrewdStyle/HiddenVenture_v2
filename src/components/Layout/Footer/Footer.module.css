@@ -57,3 +57,11 @@
 .FooterBy span {
   color: var(--primary-color);
 }
+
+.FooterLink {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+.FooterLink:hover {
+  text-decoration: underline;
+}

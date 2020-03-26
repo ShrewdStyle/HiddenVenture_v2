@@ -10,11 +10,10 @@ const ContactForm = () => {
           Have some questions? Get in touch
         </div>
         <div className={classes.FormText}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nobis
-          labore temporibus provident laboriosam, illo optio. Nulla veritatis
-          sapiente sint ad dolore saepe dolores error ab, id quam debitis at
-          delectus voluptate nam rem autem placeat quaerat minus deleniti cum.
-          Nihil cumque maxime incidunt dignissimos?
+          If you have any questions or queries on your holiday destinations,
+          feel free to send us a message and our team will respond back to you
+          asap. We are always happy to give any advice we can to help with your
+          holiday experience.
         </div>
       </div>
       <div className={classes.FormContainer}>

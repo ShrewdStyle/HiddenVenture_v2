@@ -24,12 +24,11 @@ const IntroText = () => {
           data-aos="fade-up"
           data-aos-delay="250"
         >
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
-          laborum a nemo commodi! Ullam autem laboriosam tempora exercitationem
-          harum blanditiis eveniet natus similique, cumque debitis ratione
-          voluptate odit ex sint sapiente aliquid libero obcaecati eligendi ea
-          commodi. Perferendis modi est sit nemo ea dolores! Perferendis saepe
-          cumque ut provident dolorum.
+          Below you will be directed to our location form where you will be
+          asked 7 questions and with your answers we will be able to provide you
+          with 3 unique locations which we think will best suit your travel
+          requirements. Feel free to contact us for any further information or
+          advice, as always we will be happy to help.
         </div>
       </div>
       <div className={classes.IntroTextContainer}>

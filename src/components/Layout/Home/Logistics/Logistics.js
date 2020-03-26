@@ -15,7 +15,7 @@ const Logistics = () => {
           So how does Hidden Venture work?
         </div>
         <h3 className={classes.LogisticsSecondaryHeader}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing.
+          Follow our 3 main steps to find your next holiday destination
         </h3>
       </div>
       <div className={classes.LogisticsStepsContainer}>
@@ -32,8 +32,8 @@ const Logistics = () => {
               Choose Your Location
             </div>
             <div className={classes.LogisticsStepText}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              nesciunt ab quibusdam impedit nobis quis.
+              We provide locations all around the world, simply give us an idea
+              of the next area of the world you plan to visit.
             </div>
           </div>
           <div
@@ -46,8 +46,8 @@ const Logistics = () => {
             </div>
             <div className={classes.LogisticsStepHeader}>Set Your Goals</div>
             <div className={classes.LogisticsStepText}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              nesciunt ab quibusdam impedit nobis quis.
+              Next, tell us what you want to get most our of your holiday
+              experience.
             </div>
           </div>
           <div
@@ -62,8 +62,9 @@ const Logistics = () => {
               Follow the Journey
             </div>
             <div className={classes.LogisticsStepText}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              nesciunt ab quibusdam impedit nobis quis.
+              Finally, take the leap and book a holiday which you have never
+              been to before, we are sure that our unique destinations will
+              change your view on travel for the better.
             </div>
           </div>
         </div>

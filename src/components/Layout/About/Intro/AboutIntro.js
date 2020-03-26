@@ -13,23 +13,18 @@ const AboutIntro = () => {
       </div>
       <div className={classes.AboutTextContainer}>
         <h3 className={classes.TextHeader}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, in?
+          Since 2019, Hidden Venture has been revolutionising the travel
+          industry. Unique locations based on your choices.
         </h3>
         <div className={classes.TextBody}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-          repellat alias dolor cumque voluptate officiis eius assumenda. Amet ea
-          voluptate provident hic, excepturi sed est voluptas fuga vel, eaque,
-          aliquid ab laborum quis blanditiis qui quia! Nam velit laboriosam
-          eaque obcaecati! Repellendus facere sit expedita fugiat sapiente quas
-          et nam.
+          Hidden Venture is a free travel advice company, we believe that
+          everyone should be able to travel, and we have found that it's the
+          unexpected locations which are the most memorable.
         </div>
         <div className={classes.TextBody}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-          repellat alias dolor cumque voluptate officiis eius assumenda. Amet ea
-          voluptate provident hic, excepturi sed est voluptas fuga vel, eaque,
-          aliquid ab laborum quis blanditiis qui quia! Nam velit laboriosam
-          eaque obcaecati! Repellendus facere sit expedita fugiat sapiente quas
-          et nam.
+          We provide destinations all around the world and take into account
+          your holiday goals, who you intend to travel with and in what area of
+          the world you would like to travel.
         </div>
       </div>
     </Fragment>
