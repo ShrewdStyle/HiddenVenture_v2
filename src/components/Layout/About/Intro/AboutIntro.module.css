@@ -1,0 +1,46 @@
+#Showcase {
+  background-color: #333;
+  padding: 2rem 4rem;
+  position: relative;
+}
+#Showcase:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background: url("../../../../assets/Images/about-main2.jpg") no-repeat center
+    center/cover;
+}
+.ShowcaseContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4rem;
+}
+.ShowcaseContent {
+  z-index: 1;
+  color: #fff;
+}
+.Header {
+  font-size: 5rem;
+}
+
+.AboutTextContainer {
+  width: 50%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.TextHeader {
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+.TextBody {
+  padding-bottom: 1rem;
+  font-size: 18px;
+  line-height: 1.7;
+}

@@ -57,8 +57,8 @@ const Footer = () => {
         </div>
         <div className={classes.SubscribeContainer}>
           <div className={classes.SubscribeHeader}>
-            Subscribe to stay tuned for latest news and updates. No junk, spam
-            free.
+            Subscribe to stay tuned for our latest news and updates. No junk,
+            spam free.
           </div>
           <div className={classes.SubscribeInput}>
             <input

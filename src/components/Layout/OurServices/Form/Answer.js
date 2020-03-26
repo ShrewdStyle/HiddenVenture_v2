@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { SET_CURRENT_ANSWER, SET_ERROR } from "../../../../reducers/types";
 import classes from "./Answer.module.css";
 
@@ -17,21 +17,27 @@ const Answer = props => {
     choice.push("selected");
   }
   return (
-    <label
+    <button
       value={props.letter}
-      type="radio"
+      className={classes.ChoiceBtn}
       onClick={answerHandeler}
-      name="selectedAnswer"
-      className={classes.AnswerChoice}
     >
-      <input
-        value={props.letter}
-        type="radio"
-        onClick={answerHandeler}
-        name="selectedAnswer"
-      />
       {props.answer}
-    </label>
+    </button>
+
+    // <label
+    //   value={props.letter}
+    //   name="selectedAnswer"
+    //   className={classes.AnswerChoice}
+    // >
+    //   <input
+    //     value={props.letter}
+    //     type="radio"
+    //     onClick={answerHandeler}
+    //     name="selectedAnswer"
+    //   />
+    //   {props.answer}
+    // </label>
   );
 };
 

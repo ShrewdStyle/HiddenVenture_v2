@@ -1,0 +1,130 @@
+#Cards {
+  background-color: #212a30;
+  color: #fff;
+}
+.CardsContainer {
+  padding: 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.CardsHeader {
+  font-size: 3rem;
+}
+.CardsBody {
+  padding: 1rem 0;
+}
+.CardsStat {
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+.CardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 5rem 0;
+}
+
+#AsiaCard,
+#AmericaCard,
+#EuropeCard,
+#AustraliaCard,
+#GoalCard,
+#MemberCard {
+  height: 350px;
+  width: 275px;
+  background-color: #010101;
+  position: relative;
+}
+
+#AsiaCard:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../../../../assets/Images/AboutCards/about2.jpg") no-repeat
+    center center / cover;
+}
+#AmericaCard:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../../../../assets/Images/AboutCards/about3.jpg") no-repeat
+    center center / cover;
+}
+#AustraliaCard:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../../../../assets/Images/AboutCards/about6.jpg") no-repeat
+    center center / cover;
+}
+#EuropeCard:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../../../../assets/Images/AboutCards/about4.jpg") no-repeat
+    center center / cover;
+}
+#MemberCard:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../../../../assets/Images/AboutCards/about1.jpg") no-repeat
+    center center / cover;
+}
+#GoalCard:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../../../../assets/Images/AboutCards/about5.jpg") no-repeat
+    center center / cover;
+}
+
+#AsiaCard:hover:before,
+#AmericaCard:hover:before,
+#EuropeCard:hover:before,
+#AustraliaCard:hover:before,
+#GoalCard:hover:before,
+#MemberCard:hover:before {
+  opacity: 0.2;
+}
+
+.CardContentContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.CardContent {
+  z-index: 1;
+  opacity: 0;
+  font-size: 26px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 45% 1rem 0 1rem;
+  line-height: 1.6;
+}
+.CardContent:hover {
+  z-index: 1;
+  opacity: 1;
+  cursor: pointer;
+}

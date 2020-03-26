@@ -14,3 +14,31 @@
   width: 1.3em;
   outline: none;
 }
+.ChoiceBtn {
+  display: block;
+  font-family: "Varela Round", sans-serif;
+  width: 100%;
+  text-align: start;
+  padding: 0.7rem 1rem;
+  background-color: #f4f4f4;
+  margin: 1rem 0;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 1px lightgray;
+  outline: none;
+  transition: 0.5s all;
+}
+.ChoiceBtn:hover {
+  cursor: pointer;
+  background-color: rgba(0, 4, 253, 0.2);
+  box-shadow: 1px 1px 1px lightgray;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.ChoiceBtn:focus {
+  cursor: pointer;
+  background-color: rgba(0, 4, 253, 0.2);
+  box-shadow: 1px 1px 1px lightgray;
+  color: var(--primary-color);
+  font-weight: bold;
+}
