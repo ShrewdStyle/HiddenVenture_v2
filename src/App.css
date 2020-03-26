@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
+
+:root {
+  --dark-color: #282828;
+  --light-color: #f4f4f4;
+  --primary-color: #240090;
+  --secondary-color: #190061;
+  --third-color: #3500d3;
+  --fourth-color: #0c0032;
+  --fifth-color: #711c91;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Varela Round", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1,
+h2,
+h3 {
+  font-family: "Hind", sans-serif;
+}
+
+/* Utils */
+
+.BottomLine {
+  height: 1px;
+  width: 75%;
+  background-color: #ccc;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+/* SINGLE USE COMPONENTS */
+/* Question.js */
+
+.formQuestions {
+  font-size: 19px;
+  padding: 1.5rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Current.js */
+.currentQuestion {
+  font-size: 14px;
+}
+.currentQuestion span {
+  color: var(--third-color);
+  font-weight: bold;
 }

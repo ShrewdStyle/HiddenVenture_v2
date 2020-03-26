@@ -1,0 +1,106 @@
+.FormMain {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  padding-bottom: 10rem;
+  background-color: #f4f4f4;
+}
+.FormContainer {
+  width: 700px;
+  padding: 4rem;
+  background-color: #fff;
+  box-shadow: 1px 2px 3px grey;
+  margin: 0 auto;
+}
+
+.BtnBack {
+  padding: 1rem 2rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: var(--third-color);
+  border: none;
+  margin-top: 3rem;
+  transition: 0.8s all;
+  margin-right: 1.5rem;
+}
+.BtnNext {
+  padding: 1rem 2rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: var(--third-color);
+  border: none;
+  margin-top: 2rem;
+  transition: 0.8s all;
+}
+.BtnBack:hover,
+.BtnNext:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+/* RESULTS */
+
+.ResultsForm {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  padding-bottom: 10rem;
+  background-color: #f4f4f4;
+}
+.ResultsForm1 {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  padding-bottom: 10rem;
+  background-color: #010101;
+}
+.ResultsContainer {
+  width: 700px;
+  padding: 4rem;
+  background-color: #fff;
+  box-shadow: 1px 2px 3px grey;
+  margin: 0 auto;
+  text-align: center;
+}
+.ResultsContainer1 {
+  width: 700px;
+  padding: 4rem;
+  color: #fff;
+  background-color: #010101;
+  margin: 0 auto;
+  text-align: center;
+}
+.ResultsHeader {
+  margin-bottom: 2rem;
+  font-size: 2.6rem;
+}
+.FormResetBtn {
+  padding: 1rem 2rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: var(--third-color);
+  border: none;
+  margin-top: 3rem;
+  transition: 0.8s all;
+}
+.FormResetBtn:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+.FormResultsList {
+  list-style: none;
+}
+.ResultsLi {
+  padding: 0.5rem 0;
+  font-size: 20px;
+}
+.BtnContainer {
+  display: flex;
+  flex-direction: column;
+}

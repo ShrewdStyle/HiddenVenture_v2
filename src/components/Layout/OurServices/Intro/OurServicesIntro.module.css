@@ -1,0 +1,38 @@
+#Showcase {
+  background: #333;
+  padding: 2rem 4rem;
+  position: relative;
+}
+#Showcase:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: url("../../../../assets/Images/services-main.jpg") no-repeat
+    center center/cover;
+}
+.ShowcaseContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+}
+.ShowcaseContent {
+  z-index: 1;
+  color: #fff;
+}
+.Header {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: "Hind", sans-serif;
+}
+.HeaderBody {
+  padding: 2rem 0;
+  font-size: 19px;
+  line-height: 1.7;
+}
