@@ -1,7 +1,17 @@
+.NavbarContainer {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
 .Navbar {
   display: flex;
   justify-content: flex-end;
   padding: 2rem 2rem;
+  top: 0;
+  left: 0;
 }
 
 .Navbar li {
@@ -29,4 +39,17 @@
 }
 .Logo:hover {
   cursor: pointer;
+}
+
+.SocialNav:nth-child(5) {
+  margin-right: 4rem;
+}
+
+.SocialIcon:hover {
+  color: var(--fifth-color);
+  transition: 0.5s all;
+}
+.SocialNav:hover {
+  color: var(--fifth-color);
+  transition: 0.5s all;
 }
