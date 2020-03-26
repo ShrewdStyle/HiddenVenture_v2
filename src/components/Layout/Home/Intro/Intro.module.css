@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Hind:700&display=swap");
 
 #Showcase {
@@ -53,59 +52,3 @@
   cursor: pointer;
   background-color: var(--primary-color);
 }
-=======
-@import url("https://fonts.googleapis.com/css?family=Hind:700&display=swap");
-
-#Showcase {
-  background: #333;
-  padding: 2rem 4rem;
-  position: relative;
-}
-#Showcase:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.4;
-  background: url("../../../../assets/Images/main1.jpg") no-repeat center
-    center/cover;
-}
-.ShowcaseContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 70vh;
-  justify-content: center;
-  align-items: center;
-  margin-left: 3rem;
-}
-.ShowcaseContent {
-  z-index: 1;
-  color: #fff;
-}
-.Header {
-  font-size: 4rem;
-  font-weight: bold;
-  font-family: "Hind", sans-serif;
-}
-.HeaderBody {
-  padding: 2rem 0;
-  font-size: 19px;
-  line-height: 1.7;
-}
-.BtnMain {
-  padding: 1.2rem 2rem;
-  color: #fff;
-  font-weight: bold;
-  font-size: 16px;
-  background-color: var(--third-color);
-  border: none;
-  margin-top: 1rem;
-  transition: 0.8s all;
-}
-.BtnMain:hover {
-  cursor: pointer;
-  background-color: var(--primary-color);
-}
->>>>>>> 6bf5347e744296b9209f0489c7500aebc7eff1f9

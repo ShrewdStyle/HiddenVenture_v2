@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Showcase {
   background: var(--primary-color);
   padding: 2rem 4rem;
@@ -30,36 +29,3 @@
 .Header {
   font-size: 5rem;
 }
-=======
-#Showcase {
-  background: var(--primary-color);
-  padding: 2rem 4rem;
-  position: relative;
-}
-#Showcase:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.7;
-  background: url("../../../../assets/Images/contact-main2.jpg") no-repeat
-    center center/cover;
-}
-.ShowcaseContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 50vh;
-  justify-content: center;
-  align-items: center;
-  margin-left: 4rem;
-}
-.ShowcaseContent {
-  z-index: 1;
-  color: #fff;
-}
-.Header {
-  font-size: 5rem;
-}
->>>>>>> 6bf5347e744296b9209f0489c7500aebc7eff1f9
