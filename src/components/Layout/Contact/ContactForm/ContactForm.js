@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./ContactForm.module.css";
 
 const ContactForm = () => {
+  const [nameState, setNameState] = useState("");
+  const [emailState, setEmailState] = useState("");
+
+  console.log(nameState);
+
   return (
     <div className={classes.ContactFormContainer}>
       <div className={classes.ContactTextContainer}>
@@ -23,11 +28,19 @@ const ContactForm = () => {
               className={classes.FormTopInput}
               type="text"
               placeholder="Your name"
+              value={nameState}
+              onChange={e => {
+                setNameState(e.target.value);
+              }}
             />
             <input
               className={classes.FormTopInput}
               type="email"
               placeholder="Your email"
+              value={emailState}
+              onChange={e => {
+                setEmailState(e.target.value);
+              }}
             />
             <input
               className={classes.FormTopInput}

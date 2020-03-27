@@ -27,6 +27,8 @@ const Form = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  // const [isLoading, setIsLoading] = useState(false);
+
   const initialState = {
     questions,
     currentQuestion: 0,

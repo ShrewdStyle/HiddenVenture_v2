@@ -1,8 +1,20 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import classes from "./Footer.module.css";
+import FooterSubscribe from "./FooterSubscribe/FooterSubscribe";
 
 const Footer = () => {
+  const [show, setShow] = useState(false);
+  const [emailInput, setEmailInput] = useState("");
+
+  const subscribeHandeler = e => {
+    e.preventDefault();
+    if (emailInput != "" && emailInput.includes(".")) {
+      setShow(!show);
+    } else {
+      alert("Please enter a valid email");
+    }
+  };
+
   return (
     <footer>
       <div className={classes.FooterContainer}>
@@ -49,18 +61,28 @@ const Footer = () => {
           </div>
         </div>
         <div className={classes.SubscribeContainer}>
-          <div className={classes.SubscribeHeader}>
-            Subscribe to stay tuned for our latest news and updates. No junk,
-            spam free.
-          </div>
-          <div className={classes.SubscribeInput}>
-            <input
-              className={classes.InputEmail}
-              type="email"
-              placeholder="Email address"
-            />
-            <button className={classes.SubscribeBtn}>SIGN UP</button>
-          </div>
+          {!show && (
+            <form
+              className={classes.SubscribeInput}
+              onSubmit={subscribeHandeler}
+            >
+              <div className={classes.SubscribeHeader}>
+                Subscribe to stay tuned for our latest news and updates. No
+                junk, spam free.
+              </div>
+              <input
+                className={classes.InputEmail}
+                type="email"
+                placeholder="Email address"
+                value={emailInput}
+                onChange={e => {
+                  setEmailInput(e.target.value);
+                }}
+              />
+              <button className={classes.SubscribeBtn}>SIGN UP</button>
+            </form>
+          )}
+          {show && <FooterSubscribe />}
         </div>
       </div>
       <div className={classes.FooterByContainer}>
