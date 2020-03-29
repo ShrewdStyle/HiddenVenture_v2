@@ -1,20 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import classes from "./Footer.module.css";
 import FooterSubscribe from "./FooterSubscribe/FooterSubscribe";
+import Spinner from "../../UI/Spinner/Spinner";
 
 const Footer = () => {
   const [show, setShow] = useState(false);
   const [emailInput, setEmailInput] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (loading) {
+      setTimeout(() => {
+        setLoading(false);
+      }, 1500);
+    }
+  }, [loading]);
 
   const subscribeHandeler = e => {
     e.preventDefault();
     if (emailInput != "" && emailInput.includes(".")) {
+      setLoading(!loading);
       setShow(!show);
     } else {
       alert("Please enter a valid email");
     }
   };
 
+  if (loading) return <Spinner />;
   return (
     <footer>
       <div className={classes.FooterContainer}>

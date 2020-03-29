@@ -1,7 +1,12 @@
 import React, { Fragment } from "react";
 import classes from "./AboutIntro.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutIntro = () => {
+  AOS.init({
+    duration: 2000
+  });
   return (
     <Fragment>
       <div id={classes.Showcase}>
@@ -11,7 +16,7 @@ const AboutIntro = () => {
           </div>
         </div>
       </div>
-      <div className={classes.AboutTextContainer}>
+      <div className={classes.AboutTextContainer} data-aos="fade-up">
         <h3 className={classes.TextHeader}>
           Since 2019, Hidden Venture has been revolutionising the travel
           industry. Unique locations based on your choices.

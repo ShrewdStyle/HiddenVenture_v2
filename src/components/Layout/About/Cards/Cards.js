@@ -5,7 +5,7 @@ const Cards = () => {
   return (
     <section id={classes.Cards}>
       <div className={classes.CardsContainer}>
-        <div className={classes.CardsTextContainer}>
+        <div className={classes.CardsTextContainer} data-aos="fade-up">
           <h3 className={classes.CardsHeader}>
             Hidden Venture by the numbers.
           </h3>

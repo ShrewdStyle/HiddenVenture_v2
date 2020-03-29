@@ -1,11 +1,11 @@
-import React, { useEffect, useReducer } from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import { Link } from "react-router-dom";
 // import { CSSTransition } from "react-transition-group";
 import classes from "./Form.module.css";
 import Current from "./Current";
 import Question from "./Question";
 import Answers from "./Answers";
-// import Spinner from "../../../UI/Spinner/Spinner";
+import Spinner from "../../../UI/Spinner/Spinner";
 
 import FormLocations from "./api/FormLocations";
 import questions from "./api/FormQuestions";
@@ -27,7 +27,15 @@ const Form = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // const [isLoading, setIsLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (loading) {
+      setTimeout(() => {
+        setLoading(false);
+      }, 2800);
+    }
+  }, [loading]);
 
   const initialState = {
     questions,
@@ -64,7 +72,7 @@ const Form = () => {
       });
       return;
     }
-
+    setLoading(!loading);
     dispatch({ type: SET_SHOW_RESULTS, showResults: true });
   };
 
@@ -165,6 +173,8 @@ const Form = () => {
   const restart = () => {
     dispatch({ type: RESET_FORM });
   };
+
+  if (loading) return <Spinner />;
 
   if (showResults) {
     return (
