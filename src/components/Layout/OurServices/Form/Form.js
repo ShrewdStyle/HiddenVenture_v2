@@ -1,11 +1,12 @@
 import React, { useEffect, useReducer, useState } from "react";
 import { Link } from "react-router-dom";
-// import { CSSTransition } from "react-transition-group";
 import classes from "./Form.module.css";
 import Current from "./Current";
 import Question from "./Question";
 import Answers from "./Answers";
 import Spinner from "../../../UI/Spinner/Spinner";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import FormLocations from "./api/FormLocations";
 import questions from "./api/FormQuestions";
@@ -23,6 +24,9 @@ import {
 } from "../../../../reducers/types";
 
 const Form = () => {
+  AOS.init({
+    duration: 3000
+  });
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -47,7 +51,7 @@ const Form = () => {
   };
 
   const [state, dispatch] = useReducer(formReducer, initialState);
-  const { currentQuestion, currentAnswer, answers, showResults, error } = state;
+  const { currentQuestion, currentAnswer, answers, showResults } = state;
 
   const question = questions[currentQuestion];
 
@@ -95,31 +99,23 @@ const Form = () => {
 
   const renderResultsData = () => {
     // EUROPE RESULTS
-
     const europeLocations = FormLocations[0].europe.sort(
       () => 0.5 - Math.random()
     );
     const europeLocationsSliced = europeLocations.slice(3, 6);
-
     // ASIA RESULTS
-
     const asiaLocations = FormLocations[1].asia.sort(() => 0.5 - Math.random());
     const asiaLocationsSliced = asiaLocations.slice(3, 6);
-
     // AMERICA RESULTS
-
     const americaLocations = FormLocations[2].america.sort(
       () => 0.5 - Math.random()
     );
     const americaLocationsSliced = americaLocations.slice(3, 6);
-
     // AUSTRALIA RESULTS
-
     const australiaLocations = FormLocations[3].australia.sort(
       () => 0.5 - Math.random()
     );
     const australiaLocationsSliced = australiaLocations.slice(3, 6);
-
     if (answers[0].answer === "a")
       return (
         <ul className={classes.FormResultsList}>
@@ -160,16 +156,6 @@ const Form = () => {
       );
   };
 
-  // SET ERROR
-
-  // const renderError = () => {
-  //   if (!error) {
-  //     return;
-  //   }
-
-  //   return <div className="error">{error}</div>;
-  // };
-
   const restart = () => {
     dispatch({ type: RESET_FORM });
   };
@@ -182,9 +168,13 @@ const Form = () => {
         <div className={classes.ResultsContainer1}>
           <h2 className={classes.ResultsHeader}>Our Top 3 Results</h2>
           <div>{renderResultsData()}</div>
+          <div className={classes.ResultsText}>
+            If you have any questions or queries click the contact button below
+            and we will be happy to answer them for you, alternatively click the
+            restart button to answer again.
+          </div>
           <Link to="/contact">
             <button className={classes.FormResetBtn}>Contact Us</button>
-            <br />
           </Link>
           <button className={classes.FormResetBtn} onClick={restart}>
             Restart
@@ -196,7 +186,11 @@ const Form = () => {
     return (
       <FormContext.Provider value={{ state, dispatch }}>
         <div className={classes.FormMain}>
-          <div className={classes.FormContainer}>
+          <div
+            className={classes.FormContainer}
+            data-aos="fade"
+            data-aos-delay="400"
+          >
             <Current current={currentQuestion + 1} total={questions.length} />
             <Question />
             <Answers />

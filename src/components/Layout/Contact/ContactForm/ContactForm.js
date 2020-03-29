@@ -3,9 +3,17 @@ import classes from "./ContactForm.module.css";
 
 const ContactForm = () => {
   const [nameState, setNameState] = useState("");
-  const [emailState, setEmailState] = useState("");
+  const [subjectState, setSubjectState] = useState("");
+  const [messageState, setMessageState] = useState("");
 
-  console.log(nameState);
+  const submitHandeler = e => {
+    if (nameState != "" && subjectState != "" && messageState != "") {
+      return;
+    } else {
+      e.preventDefault();
+      alert("Please enter a valid input");
+    }
+  };
 
   return (
     <div className={classes.ContactFormContainer}>
@@ -22,7 +30,7 @@ const ContactForm = () => {
         </div>
       </div>
       <div className={classes.FormContainer}>
-        <form>
+        <form onSubmit={submitHandeler}>
           <div className={classes.TopRowInput}>
             <input
               className={classes.FormTopInput}
@@ -37,21 +45,25 @@ const ContactForm = () => {
               className={classes.FormTopInput}
               type="email"
               placeholder="Your email"
-              value={emailState}
-              onChange={e => {
-                setEmailState(e.target.value);
-              }}
             />
             <input
               className={classes.FormTopInput}
               type="text"
               placeholder="Subject"
+              value={subjectState}
+              onChange={e => {
+                setSubjectState(e.target.value);
+              }}
             />
           </div>
           <textarea
             name="message"
             className={classes.FormTextArea}
             placeholder="Your message"
+            value={messageState}
+            onChange={e => {
+              setMessageState(e.target.value);
+            }}
           ></textarea>
           <button className={classes.FormBtn}>Send</button>
         </form>

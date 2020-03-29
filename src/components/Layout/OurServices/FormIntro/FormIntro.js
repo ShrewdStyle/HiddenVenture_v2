@@ -1,6 +1,6 @@
 import React from "react";
-import classes from "./FormIntro.module.css";
 import { Link } from "react-router-dom";
+import classes from "./FormIntro.module.css";
 
 const FormIntro = () => {
   return (

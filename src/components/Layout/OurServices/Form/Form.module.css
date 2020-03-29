@@ -43,14 +43,6 @@
 
 /* RESULTS */
 
-.ResultsForm {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  align-items: center;
-  padding-bottom: 10rem;
-  background-color: #f4f4f4;
-}
 .ResultsForm1 {
   display: flex;
   justify-content: center;
@@ -59,14 +51,14 @@
   padding-bottom: 10rem;
   background-color: #010101;
 }
-.ResultsContainer {
-  width: 700px;
-  padding: 4rem;
-  background-color: #fff;
-  box-shadow: 1px 2px 3px grey;
-  margin: 0 auto;
-  text-align: center;
+
+.ResultsText {
+  padding: 3rem 0 1rem 0;
+  text-align: start;
+  font-size: 18px;
+  line-height: 1.4;
 }
+
 .ResultsContainer1 {
   width: 700px;
   padding: 4rem;
@@ -86,7 +78,7 @@
   font-size: 16px;
   background-color: var(--third-color);
   border: none;
-  margin-top: 3rem;
+  margin: 3rem 1.5rem 0 1.5rem;
   transition: 0.8s all;
 }
 .FormResetBtn:hover {
@@ -99,8 +91,4 @@
 .ResultsLi {
   padding: 0.5rem 0;
   font-size: 20px;
-}
-.BtnContainer {
-  display: flex;
-  flex-direction: column;
 }
