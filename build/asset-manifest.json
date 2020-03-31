@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7b958768.chunk.css",
+    "main.js": "/static/js/main.1c9fb782.chunk.js",
+    "main.js.map": "/static/js/main.1c9fb782.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.237f18d8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.237f18d8.js.map",
+    "static/css/2.eb43dee1.chunk.css": "/static/css/2.eb43dee1.chunk.css",
+    "static/js/2.5a4ed138.chunk.js": "/static/js/2.5a4ed138.chunk.js",
+    "static/js/2.5a4ed138.chunk.js.map": "/static/js/2.5a4ed138.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.280de077ab189f341c4895e9764a4073.js": "/precache-manifest.280de077ab189f341c4895e9764a4073.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.eb43dee1.chunk.css.map": "/static/css/2.eb43dee1.chunk.css.map",
+    "static/css/main.7b958768.chunk.css.map": "/static/css/main.7b958768.chunk.css.map",
+    "static/js/2.5a4ed138.chunk.js.LICENSE.txt": "/static/js/2.5a4ed138.chunk.js.LICENSE.txt",
+    "static/media/AboutIntro.module.css": "/static/media/about-main2.d7c221ed.jpg",
+    "static/media/Cards.module.css": "/static/media/about6.68deb62a.jpg",
+    "static/media/ContactIntro.module.css": "/static/media/contact-main2.4d18bbfd.jpg",
+    "static/media/hidden-venture-logo.PNG": "/static/media/hidden-venture-logo.0156a20b.PNG",
+    "static/media/Intro.module.css": "/static/media/main1.440b053d.jpg",
+    "static/media/main2.jpg": "/static/media/main2.4c773480.jpg",
+    "static/media/OurServicesIntro.module.css": "/static/media/services-main3.331fc4b0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.237f18d8.js",
+    "static/css/2.eb43dee1.chunk.css",
+    "static/js/2.5a4ed138.chunk.js",
+    "static/css/main.7b958768.chunk.css",
+    "static/js/main.1c9fb782.chunk.js"
+  ]
+}
