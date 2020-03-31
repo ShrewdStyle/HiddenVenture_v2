@@ -18,7 +18,7 @@ const Footer = () => {
 
   const subscribeHandeler = e => {
     e.preventDefault();
-    if (emailInput != "" && emailInput.includes(".")) {
+    if (emailInput !== "" && emailInput.includes(".")) {
       setLoading(!loading);
       setShow(!show);
     } else {
@@ -54,6 +54,7 @@ const Footer = () => {
               className={classes.FooterLink}
               href="https://travelaware.campaign.gov.uk/"
               target="_blank"
+              rel="noreferrer noopener"
             >
               <div className={classes.FooterPoint}>Travel Aware website</div>
             </a>
@@ -61,6 +62,7 @@ const Footer = () => {
               className={classes.FooterLink}
               href="https://www.gov.uk/foreign-travel-advice"
               target="_blank"
+              rel="noreferrer noopener"
             >
               <div className={classes.FooterPoint}>
                 UK Government travel advice

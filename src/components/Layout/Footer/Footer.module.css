@@ -65,3 +65,46 @@
 .FooterLink:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 1430px) {
+  .FooterContainer {
+    padding: 4rem 2rem;
+    margin: 0 auto;
+  }
+  .FooterHeader {
+    margin: 0;
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .FooterHeadings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 0 3rem 0;
+  }
+  .FooterContainer {
+    padding: 4rem;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 700px) {
+  .FooterHeadings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 0 3rem 0;
+  }
+  .FooterContainer {
+    padding: 2rem;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 350px) {
+  .FooterHeadings {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem 0 3rem 0;
+  }
+  .InputEmail {
+    text-align: center;
+  }
+}

@@ -7,7 +7,7 @@ const ContactForm = () => {
   const [messageState, setMessageState] = useState("");
 
   const submitHandeler = e => {
-    if (nameState != "" && subjectState != "" && messageState != "") {
+    if (nameState !== "" && subjectState !== "" && messageState !== "") {
       return;
     } else {
       e.preventDefault();

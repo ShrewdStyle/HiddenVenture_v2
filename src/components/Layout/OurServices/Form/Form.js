@@ -194,12 +194,14 @@ const Form = () => {
             <Current current={currentQuestion + 1} total={questions.length} />
             <Question />
             <Answers />
-            <button className={classes.BtnBack} onClick={previous}>
-              Back
-            </button>
-            <button className={classes.BtnNext} onClick={next}>
-              {currentQuestion <= 5 ? "Next" : "Finish"}
-            </button>
+            <div className={classes.BtnContainer}>
+              <button className={classes.BtnBack} onClick={previous}>
+                Back
+              </button>
+              <button className={classes.BtnNext} onClick={next}>
+                {currentQuestion <= 5 ? "Next" : "Finish"}
+              </button>
+            </div>
           </div>
         </div>
       </FormContext.Provider>

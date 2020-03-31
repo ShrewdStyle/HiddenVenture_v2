@@ -49,3 +49,61 @@
 .Instruction:last-child {
   padding-bottom: 0;
 }
+
+@media (max-width: 1340px) {
+  .WelcomeHeader {
+    padding-left: 4rem;
+  }
+  .WelcomeText {
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 1100px) {
+  .ServicesWelcomeContainer {
+    padding: 12rem 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .ServicesWelcomeContainer {
+    display: block;
+    padding: 8rem 2rem;
+  }
+  .WelcomeHeader {
+    flex: 30%;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .IntroHeader {
+    font-size: 3rem;
+  }
+  .Instruction {
+    padding-bottom: 8rem;
+    font-size: 1.8rem;
+  }
+  .IntroTextContainer {
+    padding: 6rem;
+  }
+}
+@media (max-width: 490px) {
+  .IntroHeader {
+    font-size: 2.6rem;
+  }
+  .BottomLineLight {
+    width: 70%;
+  }
+  .IntroTextContainer {
+    padding: 4rem;
+  }
+  .WelcomeHeader {
+    flex: 30%;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+  }
+  .WelcomeText {
+    padding: 1rem;
+  }
+}

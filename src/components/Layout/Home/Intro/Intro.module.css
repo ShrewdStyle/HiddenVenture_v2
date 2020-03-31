@@ -52,3 +52,46 @@
   cursor: pointer;
   background-color: var(--primary-color);
 }
+
+@media (max-width: 1400px) {
+  .Header {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 1230px) {
+  .Header {
+    font-size: 3.1rem;
+  }
+}
+@media (max-width: 1024px) {
+  .ShowcaseContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 550px) {
+  .ShowcaseContainer {
+    grid-template-columns: repeat(1, 1fr);
+    height: 110vh;
+    margin-left: 1rem;
+  }
+  #Showcase {
+    background: #333;
+    padding: 2rem 3rem;
+    position: relative;
+  }
+}
+@media (max-width: 400px) {
+  .ShowcaseContainer {
+    grid-template-columns: repeat(1, 1fr);
+    height: 100vh;
+    margin-left: 0.5rem;
+  }
+  #Showcase {
+    background: #333;
+    padding: 2rem 2.5rem;
+    position: relative;
+  }
+  .Header {
+    font-size: 2.5rem;
+  }
+}

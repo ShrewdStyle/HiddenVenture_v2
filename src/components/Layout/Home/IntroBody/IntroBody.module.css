@@ -40,3 +40,46 @@
   padding: 1.2rem 0;
   color: var(--third-color);
 }
+
+@media (max-width: 1300px) {
+  .BodyContent {
+    display: block;
+    padding: 3rem;
+    margin: 0 3rem;
+  }
+  .BodyImg {
+    height: 500px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .BodyImg {
+    height: 300px;
+  }
+}
+
+@media (max-width: 890px) {
+  .BodyContent {
+    padding: 1rem;
+    margin: 0 2rem;
+  }
+  .TextHeader {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .BodyContent {
+    padding: 1rem;
+    margin: 0;
+  }
+  .TextHeader {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .BodyContainer {
+    padding: 1.5rem;
+  }
+}

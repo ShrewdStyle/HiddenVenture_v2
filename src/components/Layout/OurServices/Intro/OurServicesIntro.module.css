@@ -36,3 +36,25 @@
   font-size: 19px;
   line-height: 1.7;
 }
+
+@media (max-width: 860px) {
+  .ShowcaseContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Header {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 640px) {
+  #Showcase {
+    padding: 2rem 1rem;
+  }
+  .Header {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 400px) {
+  .Header {
+    font-size: 3rem;
+  }
+}

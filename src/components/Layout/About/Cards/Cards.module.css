@@ -128,3 +128,29 @@
   opacity: 1;
   cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+  .CardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 5rem 0;
+  }
+}
+@media (max-width: 700px) {
+  .CardsGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 5rem 0 5rem 10%;
+  }
+}
+@media (max-width: 450px) {
+  .CardsGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 5rem 0;
+  }
+  .CardsContainer {
+    padding: 2rem;
+  }
+}

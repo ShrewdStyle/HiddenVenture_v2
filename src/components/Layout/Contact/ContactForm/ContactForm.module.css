@@ -62,3 +62,52 @@
   cursor: pointer;
   background-color: var(--primary-color);
 }
+
+@media (max-width: 1250px) {
+  .FormTopInput:last-child {
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 850px) {
+  .ContactTextContainer {
+    max-width: 90%;
+    margin: 2rem;
+  }
+  .FormTopInput {
+    display: block;
+    margin-top: 4rem;
+    width: 50%;
+  }
+  .FormContainer {
+    padding: 1rem 0 3rem 0;
+    margin: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .ContactTextContainer {
+    max-width: 90%;
+    margin: 1rem;
+  }
+  .FormTopInput {
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  .ContactTextContainer {
+    max-width: 90%;
+    margin: 1rem;
+  }
+  .ContactFormContainer {
+    padding: 2rem;
+  }
+  .FormTopInput {
+    width: 100%;
+  }
+  .FormTextArea {
+    width: 100%;
+  }
+  .FormContainer {
+    padding: 1rem 0 3rem 0;
+    margin: 1rem;
+  }
+}

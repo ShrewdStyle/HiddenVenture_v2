@@ -15,6 +15,7 @@ const Navbar = () => {
           <a
             className={classes.SocialIcon}
             href="https://www.linkedin.com/in/jake-knight-811240b1/"
+            rel="noreferrer noopener"
             target="_blank"
           >
             <i class="fab fa-linkedin fa-2x"></i>
@@ -24,6 +25,7 @@ const Navbar = () => {
           <a
             className={classes.SocialIcon}
             target="_blank"
+            rel="noreferrer noopener"
             href="https://twitter.com/explore"
           >
             <i class="fab fa-twitter-square fa-2x"></i>
@@ -33,6 +35,7 @@ const Navbar = () => {
           <a
             className={classes.SocialIcon}
             target="_blank"
+            rel="noreferrer noopener"
             href="https://www.facebook.com/"
           >
             <i class="fab fa-facebook fa-2x"></i>
@@ -42,6 +45,7 @@ const Navbar = () => {
           <a
             className={classes.SocialIcon}
             target="_blank"
+            rel="noreferrer noopener"
             href="https://www.instagram.com/"
           >
             <i class="fab fa-instagram-square fa-2x"></i>

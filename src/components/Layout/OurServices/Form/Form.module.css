@@ -92,3 +92,44 @@
   padding: 0.5rem 0;
   font-size: 20px;
 }
+
+@media (max-width: 460px) {
+  .ResultsForm1 {
+    height: 120vh;
+    padding-bottom: 3rem;
+  }
+  .ResultsText {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 376px) {
+  .BtnContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .BtnNext {
+    padding: 1rem 3rem;
+    display: block;
+    font-size: 16px;
+    margin-top: 2rem;
+    width: 70%;
+  }
+  .BtnBack {
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    width: 70%;
+  }
+  .ResultsForm1 {
+    padding-bottom: 2rem;
+  }
+  .ResultsContainer1 {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .ResultsForm1 {
+    height: 1000px;
+    padding-bottom: 3rem;
+  }
+}

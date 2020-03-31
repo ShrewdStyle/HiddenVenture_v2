@@ -53,3 +53,36 @@
   color: var(--fifth-color);
   transition: 0.5s all;
 }
+
+@media (max-width: 940px) {
+  .SocialNav {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .Navbar {
+    justify-content: center;
+    padding: 6rem 2rem 3rem 2rem;
+  }
+  .Logo {
+    left: 40%;
+    top: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .Navbar {
+    justify-content: center;
+    padding: 6rem 0 3rem 0;
+  }
+  .Logo {
+    left: 35%;
+    top: 20px;
+  }
+}
+@media (max-width: 365px) {
+  .Navbar {
+    font-size: 13px;
+  }
+}
